@@ -3,7 +3,7 @@
 function App() {
 
   return (
-    <h1>Hellow World!</h1>
+    <h1>This is my firts React Project</h1>
     
   )
 }
