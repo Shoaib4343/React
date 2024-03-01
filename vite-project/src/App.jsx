@@ -1,11 +1,12 @@
-
+import Chai from "./Chai"
 
 function App() {
 
   return (
-    <h1>This is my firts React Project</h1>
-    
-  )
+    <>
+    <Chai/>
+    </>
+    )
 }
 
 export default App
