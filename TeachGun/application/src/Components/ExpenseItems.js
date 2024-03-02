@@ -8,11 +8,11 @@ const ExpenseItems = (Props) => {
     <div>
         <div className="expenseItems">
 
-            <ExpenseDate expenseDate={Props.expenseDate} /> 
+            <ExpenseDate expenseDate={ Props.expenseDate } /> 
             
             <div className="expenseItems__description">
-                <h2>{Props.expenseTittle}</h2>
-                <div className="expenseItem__price">${Props.expenseAmount}</div>
+                <h2>{ Props.expenseTittle }</h2>
+                <div className="expenseItem__price">${ Props.expenseAmount }</div>
 
             </div>
         </div>
