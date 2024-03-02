@@ -1,0 +1,96 @@
+body{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   height: 100vh;
+   background-color: #FF6F61;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.cardConatiner{
+    width: 27vw;
+    height: 95vh;
+    background: #E0E0E0;
+    border-radius: 1rem;
+    padding: 32px 16px;
+    box-shadow:  6px 6px 20px 0px rgba(0, 0, 0, 0.3),  -6px -6px 20px 0px rgba(255, 255, 255, 0.3);
+
+
+}
+
+.top .inputContainer input[type='text']{
+    font-size: 49pt;
+    width: 100%;
+    text-align: right;
+    border: none;
+    outline: none;
+    background-color: #E0E0E0;
+    font-weight: 100;
+}
+.Bottom{
+    margin-top: 40px;
+}
+
+.bottons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: .8rem;
+}
+.bottons input[type='button']{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: #F0F0F0;
+    box-shadow: 6px 6px 20px 0 rgba(0, 0, 0, 0.2), -6px -6px 20px 0 rgba(255, 255, 255, 0.5); /* Adjust box shadow for a more realistic neumorphism effect */
+    font-size: 20px;
+}
+
+.bottons input[type='button']:hover{
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),inset -6px -6px 20px 0 rgba(255, 255, 255, 0.5); /* Adjust box shadow for a more realistic neumorphism effect */
+
+}
+.bottons input.orange {
+    background: darkorange;
+    color: white;
+    box-shadow: 6px 6px 20px 0 rgba(0, 0, 0, 0.2), -2px -2px 10px 0 rgba(255, 140, 0, 0.5); /* Adjust box shadow for a more realistic neumorphism effect */
+   
+    
+}
+.bottons input.orange:hover {
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),inset -6px -6px 10px 0px rgba(255, 140, 0, 0.5); /* Adjust box shadow for a more realistic neumorphism effect */
+
+}
+.bottons input.slate{
+    background-color: #cacaca;
+}
+.bottons input.slate:hover{
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.15),inset -6px -6px 10px 0px #cacaca; /* Adjust box shadow for a more realistic neumorphism effect */
+
+}
+
+#equal{
+    width: calc(70px * 2 + 0.8rem);
+    grid-column-end: span 2;
+}
+
+@media (max-width: 768px){
+
+    body{
+       
+        height: 90vh;
+     }
+    .cardConatiner{
+        width: 90vw;
+        height: 80vh;
+    }
+    .bottons input[type='button']{
+        width: 62px;
+        height: 62px;
+    }
+  
+}
+ 

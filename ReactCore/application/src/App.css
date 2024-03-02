@@ -1,0 +1,21 @@
+.btn {
+  color: #fff;
+  padding: 7px 25px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#plus{
+  background-color: teal;
+  padding: 9px 28px;
+
+}
+
+#minus{
+  background-color: rgb(63, 54, 124);
+  padding: 9px 28px;
+
+}
