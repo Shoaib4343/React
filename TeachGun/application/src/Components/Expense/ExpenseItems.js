@@ -1,9 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './ExpenseItems.css'
 import ExpenseDate from './ExpenseDate'
 import Card from '../Ui/Card'
 
 const ExpenseItems = (props) => {
+
+  const [title, settitle] = useState(props.tittle);
+  const change_title = ()=>{
+    settitle("new title")
+  }
 
   return (
     <Card className="expense_item">
@@ -11,8 +16,9 @@ const ExpenseItems = (props) => {
 
         {/* <div>{props.date.toLocaleString('en-US',{ month:'long', year:'numeric', day:'2-digit'})}</div> */}
         <div className="expense_itme__description">
-            <h2>{props.tittle}</h2>
+            <h2>{title}</h2>
             <div className="expense_item__price">${props.price}</div>
+            <button onClick={change_title}>Change Title</button>
         </div>
     </Card>
 
