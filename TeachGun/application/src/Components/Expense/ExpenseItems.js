@@ -6,8 +6,14 @@ import Card from '../Ui/Card'
 const ExpenseItems = (props) => {
 
   const [title, settitle] = useState(props.tittle);
+  const [Newtitle, setNewtitle] = useState('');
+
+  const onChangeHandler = (event)=>{
+    setNewtitle(event.target.value);
+  }
+
   const change_title = ()=>{
-    settitle("new title")
+    settitle(Newtitle);
   }
 
   return (
@@ -18,6 +24,8 @@ const ExpenseItems = (props) => {
         <div className="expense_itme__description">
             <h2>{title}</h2>
             <div className="expense_item__price">${props.price}</div>
+
+            <input type="text" value={Newtitle} onChange={onChangeHandler}/>
             <button onClick={change_title}>Change Title</button>
         </div>
     </Card>
