@@ -1,5 +1,6 @@
 import React from 'react'
 import Expense from './Components/Expense/Expense'
+import NewExpense from './Components/NewExpense/NewExpense'
 
 const App = () => {
 
@@ -35,8 +36,9 @@ const App = () => {
   return (
 
     <div>
+        
+        <NewExpense />
         <Expense arr={expense} />
-
         
     </div>
   )
