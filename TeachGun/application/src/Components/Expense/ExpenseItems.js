@@ -5,28 +5,15 @@ import Card from '../Ui/Card'
 
 const ExpenseItems = (props) => {
 
-  const [title, settitle] = useState(props.tittle);
-  const [Newtitle, setNewtitle] = useState('');
-
-  const onChangeHandler = (event)=>{
-    setNewtitle(event.target.value);
-  }
-
-  const change_title = ()=>{
-    settitle(Newtitle);
-  }
-
   return (
     <Card className="expense_item">
         <ExpenseDate  date={props.date}/>
 
         {/* <div>{props.date.toLocaleString('en-US',{ month:'long', year:'numeric', day:'2-digit'})}</div> */}
         <div className="expense_itme__description">
-            <h2>{title}</h2>
+            <h2>{props.tittle}</h2>
             <div className="expense_item__price">${props.price}</div>
 
-            <input type="text" value={Newtitle} onChange={onChangeHandler}/>
-            <button onClick={change_title}>Change Title</button>
         </div>
     </Card>
 
