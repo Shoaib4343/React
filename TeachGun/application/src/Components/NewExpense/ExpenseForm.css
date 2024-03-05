@@ -1,0 +1,35 @@
+.new-expense__controls{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.new-expense__control label{
+    font-weight: bold;
+    margin: .5rem;
+    display: block;
+    color: white;
+}
+
+.new-expense__control input{
+    font: inherit;
+    padding-inline-start: .5rem;
+    border-radius: 6px;
+    width: 20rem;
+    height: 2rem;
+    max-width: 100%;
+    border: 2px solid white;
+    outline: 1px solid white;
+}
+.new-expense__control input:focus{
+    border: 2px solid rgb(255, 0, 0);
+    outline: 1px solid rgb(255, 255, 255);
+
+
+}
+
+.new-expense__action{
+    text-align: right;
+}
