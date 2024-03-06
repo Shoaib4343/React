@@ -30,14 +30,19 @@ const App = () => {
             expense_price : 800,
         },
        
-    ]
+    ];
+
+
+    const getExpenseData = (data) =>{
+        console.log(data);
+    }
 
     
   return (
 
     <div>
         
-        <NewExpense />
+        <NewExpense getExpenseData={getExpenseData} />
         <Expense arr={expense} />
         
     </div>
