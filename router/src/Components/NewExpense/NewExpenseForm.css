@@ -33,3 +33,14 @@
 .new-expense__action{
     text-align: right;
 }
+
+@media(max-width:659px){
+    .new-expense__controls{
+        justify-content: center;
+    }
+    .new-expense__control input{ 
+        width: 100%;
+        height: 2rem;
+        max-width: 100%; 
+    }
+}

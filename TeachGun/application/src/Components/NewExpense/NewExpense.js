@@ -10,7 +10,7 @@ const NewExpense = (props)=>{
             id: Math.floor(Math.random() * 100000).toString().padStart(5, '0')
         };
         props.getExpenseData(newData);
-        console.log(newData);
+        // console.log(newData);
     };
     
     return(
